@@ -51,14 +51,14 @@ services:
     container_name: Tor
     hostname: tor
     ports:
-      - 9050:9050
+      - 9057:9057
   # RabbitMQ
   rabbitmq:
     image: rabbitmq:management-alpine
     container_name: RabbitMQ
     hostname: rabbitmq
     ports:
-      - 5672:5672
+      - 5673:5672
       - 15672:15672
     volumes:
       - ~/Documents/data/rabbitmq/data/:/var/lib/rabbitmq
